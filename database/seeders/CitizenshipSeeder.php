@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Citizenship;
 use Illuminate\Database\Seeder;
 
 class CitizenshipSeeder extends Seeder
@@ -13,6 +14,6 @@ class CitizenshipSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Citizenship::factory(4)->create();
     }
 }
